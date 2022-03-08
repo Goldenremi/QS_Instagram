@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Scraper",
+	"description": "Instagram Scraper",
+	"version": "1.0",
+	"icons": {
+		"16": "/images/2_16.png",
+		"48": "/images/2_48.png",
+		"128": "/images/2_128.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"16": "/images/1_16.png",
+			"48": "/images/1_48.png",
+			"128": "/images/1_128.png"
+		}
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://instagram.com/*"],
+			"js": ["script.js"]
+		}
+	]
+}
